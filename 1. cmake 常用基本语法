@@ -1,0 +1,23 @@
+1. 声明版本
+#例如要求最低版本为2.8
+cmake_minimum_required(VERSION 2.8)
+
+
+2. 声明 cmake 工程
+project( 工程名 )
+
+
+3. 添加可执行程序
+add_executable(程序名 源代码文件)
+
+
+4.添加静态库
+add_library(库名 库文件)
+
+
+5.添加共享库
+add_library(库名 SHARED 库文件)
+
+
+6. 设置运行方式
+set(CMAKE_BUILD_TYPE "Debug")
